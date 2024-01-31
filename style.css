@@ -1,0 +1,265 @@
+html{
+    font-size: 62.5%;
+    color: #fff;
+    font-family: 'DotGothic16', sans-serif;
+    min-width: 960px;
+}
+section{
+    position: relative;
+    padding: 2rem 0;
+}
+section .contents{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+p,
+li{
+    cursor: default;
+}
+h1{
+    font-size: 3rem;
+}
+.border{
+    border: #fff solid 0.5rem;
+    border-radius: 1rem;
+    background-color: #000;
+}
+.column-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =========== loading ================= */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10;
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+#loading-logo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* =========== top ================= */
+.top{
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: scale 1s;
+}
+.top-hide{
+    scale: 0;
+}
+.top .player-box{
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    padding: 2rem 4rem;
+}
+.top ul,
+.top p{
+    line-height: 3rem;
+}
+.top .bottom-box{
+    height: 22vh;
+}
+.top .order-box{
+    width: 20%;
+}
+.top .order-box ul{
+    position: relative;
+    margin-left: 2.5rem;
+    padding: 2rem;
+}
+.top .order-box .hovered::before{
+    position: absolute;
+    content: "▲";
+    left: -1rem;
+    transform: rotateZ(90deg);
+}
+.top .text-box{
+    width: 75%;
+    padding: 2rem 4rem;
+}
+.top-img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    width: 37rem;
+    height: 37rem;
+}
+
+/* ============== details ===============*/
+.details{
+    background-image: url(./img/maptile_sogen_01.png);
+    height: 100vh;
+}
+.details .order-box{
+    width: 20%;
+    height: 100%;
+}
+.details .order-box ul{
+    position: relative;
+    margin-left: 2.5rem;
+    padding: 2rem;
+    line-height: 3rem;
+}
+.details .order-box .hovered::before{
+    position: absolute;
+    content: "▲";
+    left: -1rem;
+    transform: rotateZ(90deg);
+}
+
+.details .detail-box{
+    position: relative;
+    width: 75%;
+    height: 80vh;
+    bottom: -5rem;
+}
+.details .detail-box section::before{
+    position: absolute;
+    content: "";
+    background-color: #000;
+    top: -1.5rem;
+    left: 2rem;
+    padding: 0 0.5rem;
+}
+.about, 
+.education,
+.skill,
+.work{
+    position: relative;
+    display: none;
+    padding: 3rem 1.5rem;
+}
+.details .display{
+    display: block;
+}
+
+/* ============== about ===============*/
+.details .detail-box .about::before{
+    content: "紹介";
+}
+.about .about-img,
+.about .status,
+.about .text-box{
+    padding: 3rem 1.5rem;
+    margin: 1rem;
+}
+.about .about-img{
+    width: 33rem;
+    height: 33rem;
+    padding: 0;
+    object-fit: cover;
+}
+.about .status{
+    width: 60%; 
+    height: 33rem;
+    padding: 3rem 1.5rem;
+}
+.about .status p{
+    line-height: 3rem;
+}
+.about .contact{
+    padding: 3rem 0rem;
+}
+.about .sns-icon{
+    width: 4.8rem;
+}
+.about .text-box{
+    height: 20rem;
+    padding: 1.0rem 1.5rem;
+}
+.about .text-box p{
+    padding: 0.5rem 0;
+}
+
+/* ============== education ===============*/
+.details .detail-box .education::before{
+    content: "経歴";
+}
+.edu-contents{
+    height: 70vh;
+    overflow-y: auto;
+}
+.edu-box{
+    padding: 2rem;
+    border-bottom: #6c757d dashed 0.5rem;
+}
+.education .edu-subtitle{
+    color: #6c757d;
+    margin-bottom: 3rem;
+}
+
+/* ============== skill ===============*/
+.details .detail-box .skill::before{
+    content: "スキル";
+}
+.skill .skill-box,
+.skill .text-box{
+    padding: 2rem 1rem;
+    margin: 1rem;
+    width: 50%;
+}
+.skill .skill-title{
+    padding-bottom: 1rem;
+    border-bottom: #6c757d dashed 0.5rem;
+    margin-bottom: 1rem;
+}
+.skill .skill-top p{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.skill .text-box{
+    width: auto;
+    height: 20rem;
+}
+.skill .text-box p{
+    padding: 1.3rem 0;
+}
+
+/* ============== work ===============*/
+.details .detail-box .work::before{
+    content: "成果物";
+}
+.splide{
+    visibility: visible;
+}
+.splide .splide__slide{
+    width: 70rem;
+    height: 70vh;
+    padding: 2rem 2rem;
+}
+.work .work-img{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto auto 1rem;
+}
+.work .work-header{
+    padding-bottom: 1rem;
+}

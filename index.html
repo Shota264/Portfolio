@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="loading">
+    <h1 id="loading-logo">読み込み中</h1>
+  </div>
+
+  <section class="top" id="top">
+    <div class="contents">
+      <div class="player-box border">
+        <ul>
+          <li>ゆうしゃ</li>
+          <li>HP : 100</li>
+          <li>MP : 10</li>
+          <li>LV : 1</li>
+        </ul>
+      </div>
+
+      <img class="top-img" src="./img/my-pixcel.png"></img>
+
+      <div class="bottom-box column-2">
+        <div class="order-box border">
+          <ul>
+            <li class="hovered">紹介</li>
+            <li>経歴</li>
+            <li>スキル</li>
+            <li>成果物</li>
+          </ul>
+        </div>
+
+        <div class="text-box border">
+          <p>廣川翔太（ひろかわしょうた）のポートフォリオが現れた<br>なにがしりたい？</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="details">
+    <div class="contents column-2">
+      <div class="order-box border">
+        <ul>
+          <li class="hovered">紹介</li>
+          <li>経歴</li>
+          <li>スキル</li>
+          <li>成果物</li>
+          <p id="backBtn">もどる</p>
+        </ul>
+      </div>
+
+      <div class="detail-box border">
+        <section class="about display">
+          <div class="about-top column-2">
+            <div class="status border">
+              <h1 class="kanji-name">廣川　翔太</h1>
+              <p>ひろかわ　しょうた</p>
+              <p class="eng-name">Shota Hirokawa</p>
+
+              <div class="contact">
+                <a href="href=mailto:shota.h8338@gmail.com">
+                  <p>Email: shota.h8338@gmail.com</p>
+                </a>
+                <a href="https://github.com/Shota264" target="_blank">
+                  <img class="sns-icon" src="./img/github-icon.png">
+                </a>
+                <a href="https://www.linkedin.com/in/shota-hirokawa-a8b542280/" target="_blank">
+                  <img class="sns-icon" src="./img/linkedin-icon.png">
+                </a>
+              </div>
+
+            </div>
+            <img class="about-img border" src="./img/self-photo02.jpg"></img>
+          </div>
+
+          <div class="text-box border">
+            <p>オーストラリア留学でプログラミングを1年間学び、帰国後は広告代理店のアルバイトで半年以上WebコーダーとしてLPやWordpressを用いたホームページの作成・改修を行っています。</p>
+            <p>留学中はC#やjavascriptを用いてバックエンドとしてレストランの予約アプリの作成に携わりました。</p>
+            <p>暇なときはゲームを作ったりします。</p>
+          </div>
+
+        </section>
+
+        <section class="education">
+          <div class="edu-contents">
+            <div class="edu-box">
+              <div class="edu-header column-2">
+                <h1 class="edu-title">同志社大学</h1>
+                <div class="edu-date">2019年 4月 - 現在</div>
+              </div>
+              <h1 class="edu-subtitle">スポーツ健康科学部</h1>
+              <p class="edu-description">スポーツ健康科学科<br>GPA: 3.28</p>
+            </div>
+
+            <div class="edu-box">
+              <div class="edu-header column-2">
+                <h1 class="edu-title">株式会社ディスカバリー</h1>
+                <div class="edu-date">2023年 8月 - 現在</div>
+              </div>
+              <h1 class="edu-subtitle">Webコーダー - アルバイト</h1>
+            </div>
+
+            <div class="edu-box">
+              <div class="edu-header column-2">
+                <h1 class="edu-title">TAFE NSW</h1>
+                <div class="edu-date">2022年 7月 - 2023年 6月</div>
+              </div>
+              <h1 class="edu-subtitle">DIPLOMA OF IT AND PROGRAMMING (ADVANCED PROGRAMMING)</h1>
+              <p class="edu-description">Software development, Computer Programming</p>
+            </div>
+
+            <div class="edu-box">
+              <div class="edu-header column-2">
+                <h1 class="edu-title">大阪府立生野高等学校</h1>
+                <div class="edu-date">2016年 4月 - 2019年 3月</div>
+              </div>
+              <h1 class="edu-subtitle">文理学科</h1>
+            </div>
+          </div>
+        </section>
+
+        <section class="skill">
+          <div class="skill-top column-2">
+            <div class="skill-box border">
+              <h1 class="skill-title">フロントエンド</h1>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>Wordpress</p>
+              <p>PHP</p>
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill-box border">
+              <h1 class="skill-title">バックエンド</h1>
+              <p>C#</p>
+              <p>ASP.NET</p>
+              <p>SQL</p>
+              <p>Unity</p>
+            </div>
+          </div>
+          <div class="text-box border">
+            <p>・HTML,CSS,JavaScriptの細やかで動きのあるWEBページ</p>
+            <p>・ASP.NETによるデータ保存ができるWebアプリ</p>
+            <p>・Webサイトの入力データをスムーズに保存・表示するAPI</p>
+          </div>
+        </section>
+
+        <section class="work">
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide border">
+                  <div class="splide__slide__container">
+                    <img class="work-img" src="./img/work-img01.png">
+                  </div>
+                  <div class="work-text">
+                    <h1 class="work-header">レストラン予約WEBアプリ</h1>
+                    <p class="work-description">マネージャー、スタッフ、お客様の3つのユーズケースのレストラン予約システムです。</p>
+                  </div>
+                </li>
+                <li class="splide__slide border">
+                  <div class="splide__slide__container">
+                    <a href="https://play.unity.com/mg/other/webgl-builds-379729" target="_blank">
+                      <img class="work-img" src="./img/work-img02.png">
+                    </a>
+                  </div>
+                  <div class="work-text">
+                    <a href="https://play.unity.com/mg/other/webgl-builds-379729" target="_blank">
+                      <h1 class="work-header">Prefabs Shooting (Unity Play)</h1>
+                    </a>
+                    <p class="work-description">シンプルで難しいシューティングゲームです。<br>敵を打って経験値を貯めて自分を強化していきましょう。</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
